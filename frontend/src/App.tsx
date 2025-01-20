@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import logo from './assets/logo.png';
+import ConsultingServices from './components/ConsultingServices';
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
                 <li>• Flexible scheduling</li>
                 <li>• Targeted problem solving</li>
               </ul>
-              <button className="btn-primary w-full">Book Now</button>
+              <a href="#services" className="btn-primary w-full block text-center">Learn More</a>
             </div>
             <div className="card">
               <h2 className="text-2xl font-semibold mb-4">Weekly Package</h2>
@@ -38,7 +39,7 @@ function App() {
                 <li>• Daily check-ins</li>
                 <li>• Strategic planning</li>
               </ul>
-              <button className="btn-primary w-full">Get Started</button>
+              <a href="#services" className="btn-primary w-full block text-center">Learn More</a>
             </div>
             <div className="card">
               <h2 className="text-2xl font-semibold mb-4">Monthly Retainer</h2>
@@ -48,9 +49,14 @@ function App() {
                 <li>• Priority support</li>
                 <li>• Business development</li>
               </ul>
-              <button className="btn-primary w-full">Contact Us</button>
+              <a href="#services" className="btn-primary w-full block text-center">Learn More</a>
             </div>
           </div>
+        </section>
+
+        {/* Consulting Services Details */}
+        <section id="services" className="section-container">
+          <ConsultingServices />
         </section>
 
         {/* Merchandise Section */}
