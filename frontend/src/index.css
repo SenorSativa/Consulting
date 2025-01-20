@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-brand-black text-brand-white;
+  }
+  section {
+    @apply scroll-mt-20;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-brand-red text-brand-white rounded-lg hover:bg-brand-green transition-colors;
+  }
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16;
+  }
+  .card {
+    @apply bg-brand-black/80 rounded-lg shadow-md p-6 border border-brand-red/20;
+  }
+  .hero-section {
+    @apply relative bg-brand-black text-brand-white py-32 overflow-hidden mt-[-5rem];
+  }
+  .hero-content {
+    @apply relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center;
+  }
+}
